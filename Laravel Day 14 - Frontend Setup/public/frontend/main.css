@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    /* Brand */
+    --primary: #E91E63;
+    --primary-hover: #D81B60;
+    --secondary: #3F51B5;
+
+    /* Text */
+    --text-heading: #800080;
+    /* Dark Gray */
+    --text-content: #4B5563;
+
+    /* Backgrounds */
+    --bg: #F9FAFB;
+    /* Light pink tint */
+    --bg-card: #FFFFFF;
+
+    /* Links */
+    --link: var(--primary);
+    --link-hover: #C2185B;
+
+    /* Shadow */
+    --shadow: rgba(0, 0, 0, 0.08);
+
+    --font-heading: "Noto Serif Devanagari", serif;
+    --font-body: "Noto Sans Devanagari", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-content);
+    font-family: var(--font-body);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+}
+
+.card {
+    box-shadow: 0 0 10px var(--shadow);
+    border-radius: 4px;
+    background-color: var(--bg-card);
+}
+

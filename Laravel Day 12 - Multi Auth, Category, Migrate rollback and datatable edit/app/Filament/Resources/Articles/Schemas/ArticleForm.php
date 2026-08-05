@@ -3,10 +3,12 @@
 namespace App\Filament\Resources\Articles\Schemas;
 
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Str;
 
 class ArticleForm
 {
@@ -15,12 +17,14 @@ class ArticleForm
         return $schema
             ->components([
                 TextInput::make('title')
-                    ->required(),
+                ->debounce(2000)
+                ->afterStateUpdated(fn($state, $set) => $set('slug', Str::slug($state)))
+                ->required(),
                 TextInput::make('slug')
                     ->required(),
                 FileUpload::make('image')
                     ->image(),
-                Textarea::make('description')
+                RichEditor::make('description')
                     ->required()
                     ->columnSpanFull(),
                 Toggle::make('status')
