@@ -5,7 +5,7 @@
 
             <!-- Company -->
             <div>
-                <h2 class="text-2xl font-bold text-[purple]">
+                <h2 class="text-2xl font-bold text-(--primary)">
                     जवाफ<span class="text-[gray]">डिजिटल पत्रिका</span>
                 </h2>
                 <p class="mt-4 text-[#2d2b2b]">

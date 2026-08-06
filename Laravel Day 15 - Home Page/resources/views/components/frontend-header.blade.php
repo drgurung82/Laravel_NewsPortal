@@ -25,8 +25,8 @@
 
                 @foreach ($categories as $category)
                 <li>
-                    <a href="/news"
-                        class="{{ request()->is('news') ? 'text-orange-500 border border-orange-500 px-2 py-1 rounded-md' : 'hover:text-orange-500' }}">
+                    <a href="#"
+                        class="hover:text-orange-500">
                         {{$category->title}}
                     </a>
                 </li>
@@ -101,31 +101,31 @@
             </li>
 
             <li>
-                <a href="/news">समाचार</a>
+                <a href="/category/news">समाचार</a>
             </li>
 
             <li>
-                <a href="/entertainment">मनोरञ्जन</a>
+                <a href="/category/entertainment">मनोरञ्जन</a>
             </li>
 
             <li>
-                <a href="/sports">खेलकुद</a>
+                <a href="/category/sports">खेलकुद</a>
             </li>
 
             <li>
-                <a href="/thoughts">विचार</a>
+                <a href="/category/thoughts">विचार</a>
             </li>
 
             <li>
-                <a href="/education">शिक्षा</a>
+                <a href="/category/education">शिक्षा</a>
             </li>
 
             <li>
-                <a href="/health">स्वास्थ्य</a>
+                <a href="/category/health">स्वास्थ्य</a>
             </li>
 
             <li>
-                <a href="/economy">अर्थतन्त्र</a>
+                <a href="/category/economy">अर्थतन्त्र</a>
             </li>
 
         </ul>
